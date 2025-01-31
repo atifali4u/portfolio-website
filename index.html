@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Atif Ali Khan | Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+
+    
+  </head>
+  <body>
+    <header>
+      <nav>
+        <div class="left">Atif Ali Khan | Portfolio</div>
+        <div class="right">
+          <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About Me</a></li>
+            <li><a href="#">Resume</a></li>
+            <li><a href="#">Skills</a></li>
+            <li><a href="#">Achievements</a></li>
+            <li><a href="#">Projects</a></li>
+            <li><a href="#">Services Offering</a></li>
+            <li><a href="#">Contact Me</a></li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <section class="first-section">
+        <div class="left-section">
+          Hi, I Am <span class="purple">Atif Ali Khan</span>
+          <div>And I Am a</div>
+          <span id="element"></span>
+        </div>
+      </section>
+      <section class="second-section">
+        <p>Hello world</p>
+      </section>
+    </main>
+
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script>
+      var typed = new Typed("#element", {
+        strings: [
+          "<i>Full Stack Web Developer.</i>",
+          " Python Programmer.",
+          " AI Engineer.",
+        ],
+        typeSpeed: 50,
+      });
+    </script>
+  </body>
+</html>

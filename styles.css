@@ -1,0 +1,97 @@
+
+      * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+      }
+      body {
+        background-color: rgb(0, 0, 33);
+        color: white;
+        font-family: "Playfair Display";
+        line-height: 1.6;
+      }
+      nav {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 90px;
+        background-color: rgb(18, 18, 62);
+        padding: 0 20px;
+      }
+      nav ul {
+        display: flex;
+        justify-content: center;
+      }
+      nav ul li {
+        list-style: none;
+        margin: 0 20px;
+      }
+      .left {
+        font-size: 1.5rem;
+      }
+      nav ul li a {
+        text-decoration: none;
+        color: white;
+      }
+      nav ul li a:hover {
+        font-size: 1.02rem;
+        color: rgb(153, 153, 226);
+      }
+
+      /* Flex container adjustments */
+      .left-section {
+        font-size: 3rem;
+        background-image: url("/images/DeveloperImage.png");
+        background-repeat: no-repeat;
+        background-size: cover; /* Ensure the image covers the entire .left-section */
+        background-position: center; /* Center the image within the .left-section */
+        width: 100%; /* Adjust as needed */
+        height: 100vh; /* Adjust the height as per your layout needs */
+        padding: 20px; /* Optional: add padding if you need space inside the section */
+        color: white; /* Ensure the text remains visible over the image */
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .first-section div {
+        /* margin: 20px; */
+        /* flex: 1; */
+      }
+      .left-section {
+        /* margin-left: 20%; */
+        font-size: 3rem;
+      }
+      .purple {
+        color: rgb(170, 107, 228);
+      }
+      #element {
+        color: rgb(170, 107, 228);
+      }
+
+      /* Responsive adjustments */
+      @media (max-width: 768px) {
+        nav {
+          flex-direction: column;
+          height: auto;
+        }
+        nav ul {
+          flex-direction: column;
+          align-items: center;
+        }
+        nav ul li {
+          margin: 10px 0;
+        }
+        .first-section {
+          flex-direction: column;
+          text-align: center;
+        }
+        .left-section {
+          font-size: 1.8rem;
+        }
+        .right-section img {
+          max-width: 100%;
+        }
+      }
+   
